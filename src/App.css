@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'nl-light';
+  src: local('Nl-Light'), url('./assets/fonts/Nl-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'nl-medium';
+  src: local('Nl-Medium'), url('./assets/fonts/Nl-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'nl-regular';
+  src: local('Nl-Regular'), url('./assets/fonts/Nl-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'nl';
+  src: local('Nl-Semibold'),
+    url('./assets/fonts/Nl-Semibold.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+}
