@@ -64,7 +64,9 @@ export default function Home() {
             jaqueline martins
           </p>
 
-          <div className='menu-link'></div>
+          <div onClick={() => setMenu(true)} className='menu-link'>
+            MENU
+          </div>
         </div>
 
         <div className='events'>

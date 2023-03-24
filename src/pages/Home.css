@@ -36,19 +36,24 @@ p {
 }
 
 .home .nav {
+  display: flex;
+  justify-content: space-between;
 }
 .home .nav .galeria {
   margin: 0;
   padding: 0;
   padding-top: 20px;
   padding-left: 30px;
-
   color: #fff;
-  /* z-index: 2; */
   font-size: 3.1rem;
   font-family: 'nl-light';
   font-weight: bolder;
   letter-spacing: 3px;
+}
+.home .nav .menu-link {
+  padding-top: 20px;
+  padding-right: 30px;
+  color: #ff2800;
 }
 
 .events {
@@ -120,10 +125,16 @@ p {
   flex-direction: column;
   justify-content: space-between;
   cursor: url(cursor-close.svg) 18 18, auto !important;
+  z-index: 2;
 }
 
 .menu * {
   cursor: url(cursor-close.svg) 18 18, auto !important;
+}
+
+.menu a,
+.menu a * {
+  cursor: url(cursor-icon.svg) 18 18, auto !important;
 }
 
 .menu .nav {
@@ -137,6 +148,11 @@ p {
 
 .menu .nav div:first-child {
   font-weight: normal;
+}
+
+.menu .nav div:first-child:hover {
+  border-bottom: #ff2800 2px solid;
+  cursor: url(cursor-icon.svg) 18 18, auto !important;
 }
 
 .menu .section {
