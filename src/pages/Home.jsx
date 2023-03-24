@@ -32,11 +32,18 @@ export default function Home() {
       } else {
         setBg(1);
       }
-      console.log(bg);
+      // console.log(bg);
     }, 5000);
 
     return () => clearInterval(interval);
   }, [bg]);
+
+  const handleMenu = (e) => {
+    // console.log(e.target);
+    if (e.target.id !== 'email') {
+      setMenu(false);
+    }
+  };
 
   return (
     <>
@@ -160,7 +167,7 @@ export default function Home() {
         </div>
       </div>
       {menu && (
-        <div className='menu' onClick={() => setMenu(false)}>
+        <div className='menu' onClick={handleMenu}>
           <div className='nav'>
             <div className=''>ENGLISH VERSION</div>
             <div className=''>FECHAR</div>
@@ -183,6 +190,7 @@ export default function Home() {
                   name='email'
                   id='email'
                   placeholder='e-mail + ENTER'
+                  // onClick={() => handleNewsletter()}
                 />
               </div>
               <div className='social'>
